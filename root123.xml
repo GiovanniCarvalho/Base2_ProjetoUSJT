@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-application progid="Excel.Sheet"?>
+ <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Worksheet ss:Name="root123">
+<Table>
+<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+<Row><Cell><Data ss:Type="String">Núm</Data></Cell><Cell><Data ss:Type="String">Projeto</Data></Cell><Cell><Data ss:Type="String">Relator</Data></Cell><Cell><Data ss:Type="String">Atribuído a</Data></Cell><Cell><Data ss:Type="String">Prioridade</Data></Cell><Cell><Data ss:Type="String">Gravidade</Data></Cell><Cell><Data ss:Type="String">Freqüência</Data></Cell><Cell><Data ss:Type="String">Versão do Produto</Data></Cell><Cell><Data ss:Type="String">Categoria</Data></Cell><Cell><Data ss:Type="String">Data de Envio</Data></Cell><Cell><Data ss:Type="String">SO</Data></Cell><Cell><Data ss:Type="String">Versão SO</Data></Cell><Cell><Data ss:Type="String">Plataforma</Data></Cell><Cell><Data ss:Type="String">Visibilidade</Data></Cell><Cell><Data ss:Type="String">Atualizado</Data></Cell><Cell><Data ss:Type="String">Resumo</Data></Cell><Cell><Data ss:Type="String">Estado</Data></Cell><Cell><Data ss:Type="String">Resolução</Data></Cell><Cell><Data ss:Type="String">Corrigido na Versão</Data></Cell></Row><Row><Cell ><Data ss:Type="Number">0000015</Data></Cell>
+<Cell ><Data ss:Type="String">P01USJT</Data></Cell>
+<Cell ><Data ss:Type="String">root123</Data></Cell>
+<Cell ><Data ss:Type="String">gigiou2</Data></Cell>
+<Cell ><Data ss:Type="String">normal</Data></Cell>
+<Cell ><Data ss:Type="String">recurso</Data></Cell>
+<Cell ><Data ss:Type="String">às vezes</Data></Cell>
+<Cell ><Data ss:Type="String"></Data></Cell>
+<Cell ><Data ss:Type="String">Categoria1.1</Data></Cell>
+<Cell ><Data ss:Type="String">2021-05-27</Data></Cell>
+<Cell ><Data ss:Type="String"></Data></Cell>
+<Cell ><Data ss:Type="String"></Data></Cell>
+<Cell ><Data ss:Type="String"></Data></Cell>
+<Cell ><Data ss:Type="String">público</Data></Cell>
+<Cell ><Data ss:Type="String">2021-05-27</Data></Cell>
+<Cell ><Data ss:Type="String">Criar 30 casos de teste</Data></Cell>
+<Cell ><Data ss:Type="String">atribuído</Data></Cell>
+<Cell ><Data ss:Type="String">aberto</Data></Cell>
+<Cell ><Data ss:Type="String"></Data></Cell>
+</Row><Row><Cell ><Data ss:Type="Number">0000014</Data></Cell>
+<Cell ><Data ss:Type="String">P01USJT</Data></Cell>
+<Cell ><Data ss:Type="String">root123</Data></Cell>
+<Cell ><Data ss:Type="String"></Data></Cell>
+<Cell ><Data ss:Type="String">imediato</Data></Cell>
+<Cell ><Data ss:Type="String">obstáculo</Data></Cell>
+<Cell ><Data ss:Type="String">aleatório</Data></Cell>
+<Cell ><Data ss:Type="String"></Data></Cell>
+<Cell ><Data ss:Type="String">Categoria1.1</Data></Cell>
+<Cell ><Data ss:Type="String">2021-05-27</Data></Cell>
+<Cell ><Data ss:Type="String"></Data></Cell>
+<Cell ><Data ss:Type="String"></Data></Cell>
+<Cell ><Data ss:Type="String"></Data></Cell>
+<Cell ><Data ss:Type="String">público</Data></Cell>
+<Cell ><Data ss:Type="String">2021-05-27</Data></Cell>
+<Cell ><Data ss:Type="String">Revisão dos Bugs de Loading</Data></Cell>
+<Cell ><Data ss:Type="String">novo</Data></Cell>
+<Cell ><Data ss:Type="String">aberto</Data></Cell>
+<Cell ><Data ss:Type="String"></Data></Cell>
+</Row></Table>
+</Worksheet></Workbook>

@@ -1,0 +1,4102 @@
+{
+  "id": "43b0d915-d81c-494d-86e8-12d1a54c25b2",
+  "version": "2.0",
+  "name": "Base2USJT",
+  "url": "http://localhost/mantis/my_view_page.php",
+  "tests": [{
+    "id": "8b5e9061-d5c9-4f92-999d-82f4886321a8",
+    "name": "EntrarAdm",
+    "commands": [{
+      "id": "f1e3c9b2-08fa-4283-8262-04d9116de43a",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/mantis/login_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "320b2452-0855-4d4c-81ad-bdf15780fa0e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "958x1039",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95929e09-580e-4069-9c72-03dfb4e9112d",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "root123"
+    }, {
+      "id": "5b9bb961-4ea0-441d-a991-fff83c797c51",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e21665c2-5697-42d6-8b3d-992c35035a92",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "root"
+    }, {
+      "id": "0a458fef-2cc5-4ce9-b004-4020d26f6005",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "a355969d-b109-4afd-84ab-cc98a766e685",
+    "name": "Sair",
+    "commands": [{
+      "id": "299d7763-83e3-4eae-a192-00c7437ba482",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9466a020-5afa-4210-9865-6da058752aa3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5bc3830-dc10-46dc-8161-520ad4d2703d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.user-info",
+      "targets": [
+        ["css=.user-info", "css:finder"],
+        ["xpath=//div[@id='navbar-container']/div[2]/ul/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'root123')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6acd09c-d479-45ab-9ef4-495d7e9b62f0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.user-menu > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//div[@id='navbar-container']/div[2]/ul/li[3]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/logout_page.php')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a02b3668-dd6e-4d7e-aaac-adde53fba597",
+    "name": "CriarUsuario",
+    "commands": [{
+      "id": "4d6f7be6-dab1-424c-8ecf-7fff70f543f3",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/mantis/manage_proj_create_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47586a4a-5ceb-435f-9d6c-9f0925a11416",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6afe9d64-8825-4e6d-b261-97c5fa237f4a",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5476f0c7-79e9-4c24-9b4e-ee85abffe7d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active .menu-text",
+      "targets": [
+        ["css=.active .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11cc60a2-b077-4ad0-9d94-5ecec3eae4d5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Usuários",
+      "targets": [
+        ["linkText=Gerenciar Usuários", "linkText"],
+        ["css=.nav-tabs > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Usuários')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_user_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Usuários')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "929112cd-9f6c-4875-8ab3-3790cc4059f8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Criar nova conta",
+      "targets": [
+        ["linkText=Criar nova conta", "linkText"],
+        ["css=.btn-round:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Criar nova conta')]", "xpath:link"],
+        ["xpath=//div[@id='manage-user-div']/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'manage_user_create_page.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Criar nova conta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "103b141a-691b-476f-9526-0d34958f439f",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-username",
+      "targets": [
+        ["id=user-username", "id"],
+        ["name=username", "name"],
+        ["css=#user-username", "css:finder"],
+        ["xpath=//input[@id='user-username']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52074017-8f2d-4497-b47a-898adb747190",
+      "comment": "",
+      "command": "type",
+      "target": "id=user-username",
+      "targets": [
+        ["id=user-username", "id"],
+        ["name=username", "name"],
+        ["css=#user-username", "css:finder"],
+        ["xpath=//input[@id='user-username']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "gigiou"
+    }, {
+      "id": "df545abc-5906-40a6-a4cf-f3a3ebad6f17",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-realname",
+      "targets": [
+        ["id=user-realname", "id"],
+        ["name=realname", "name"],
+        ["css=#user-realname", "css:finder"],
+        ["xpath=//input[@id='user-realname']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6059ff8-e3ec-4ccd-80fb-bca1f993c1d2",
+      "comment": "",
+      "command": "type",
+      "target": "id=user-realname",
+      "targets": [
+        ["id=user-realname", "id"],
+        ["name=realname", "name"],
+        ["css=#user-realname", "css:finder"],
+        ["xpath=//input[@id='user-realname']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "gigio"
+    }, {
+      "id": "77e28f22-98fe-4161-88a6-768b2e847798",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-field",
+      "targets": [
+        ["id=email-field", "id"],
+        ["name=email", "name"],
+        ["css=#email-field", "css:finder"],
+        ["xpath=//input[@id='email-field']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "gigio@g.com"
+    }, {
+      "id": "d7023f2f-c4c4-4db0-88a4-f2268b4956dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-access-level",
+      "targets": [
+        ["id=user-access-level", "id"],
+        ["name=access_level", "name"],
+        ["css=#user-access-level", "css:finder"],
+        ["xpath=//select[@id='user-access-level']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[4]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d1a88d9-bca5-4a1e-b558-62a5d874ea28",
+      "comment": "",
+      "command": "select",
+      "target": "id=user-access-level",
+      "targets": [],
+      "value": "label=visualizador"
+    }, {
+      "id": "b0d69224-5e10-4bd8-9f46-390b5c8cc632",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-access-level",
+      "targets": [
+        ["id=user-access-level", "id"],
+        ["name=access_level", "name"],
+        ["css=#user-access-level", "css:finder"],
+        ["xpath=//select[@id='user-access-level']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[4]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "949d5349-9681-4cd8-a92d-a8d279a43a8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Criar Usuário']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-user-create-form']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f7b09d9d-262d-4ce5-be72-633df1b0bda5",
+    "name": "AtualizarUsuario",
+    "commands": [{
+      "id": "c3447e8c-10f7-4875-af2c-ae0d0ea0bd35",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/mantis/manage_proj_create_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7427d16-174f-4a1c-aa1c-204cb6305b11",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf064949-a819-46bb-9e77-8233fe1aa2a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c8af32e-1667-41e5-bccb-dde8c1c23b32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active .menu-text",
+      "targets": [
+        ["css=.active .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "615639e9-b7c2-4e00-a914-9048adfc3315",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Usuários",
+      "targets": [
+        ["linkText=Gerenciar Usuários", "linkText"],
+        ["css=.nav-tabs > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Usuários')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_user_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Usuários')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb862f7d-3277-40b6-ac61-adff21248fcb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=gigiou",
+      "targets": [
+        ["linkText=gigiou", "linkText"],
+        ["css=tr:nth-child(1) > td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'gigiou')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_user_edit_page.php?user_id=46')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'gigiou')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c0f0044-cfeb-47b3-86cf-6ef27215052b",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-username",
+      "targets": [
+        ["id=edit-username", "id"],
+        ["name=username", "name"],
+        ["css=#edit-username", "css:finder"],
+        ["xpath=//input[@id='edit-username']", "xpath:attributes"],
+        ["xpath=//form[@id='edit-user-form']/div/div[2]/div/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ae90ef4-a5ce-4c34-b35c-c2d41047f330",
+      "comment": "",
+      "command": "type",
+      "target": "id=edit-username",
+      "targets": [
+        ["id=edit-username", "id"],
+        ["name=username", "name"],
+        ["css=#edit-username", "css:finder"],
+        ["xpath=//input[@id='edit-username']", "xpath:attributes"],
+        ["xpath=//form[@id='edit-user-form']/div/div[2]/div/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "gigiou2"
+    }, {
+      "id": "13694d65-f868-42bd-9109-88ae53779b7e",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-realname",
+      "targets": [
+        ["id=edit-realname", "id"],
+        ["name=realname", "name"],
+        ["css=#edit-realname", "css:finder"],
+        ["xpath=//input[@id='edit-realname']", "xpath:attributes"],
+        ["xpath=//form[@id='edit-user-form']/div/div[2]/div/div/div/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "242db560-0990-4bf1-b853-0f0ab58fe36a",
+      "comment": "",
+      "command": "type",
+      "target": "id=edit-realname",
+      "targets": [
+        ["id=edit-realname", "id"],
+        ["name=realname", "name"],
+        ["css=#edit-realname", "css:finder"],
+        ["xpath=//input[@id='edit-realname']", "xpath:attributes"],
+        ["xpath=//form[@id='edit-user-form']/div/div[2]/div/div/div/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "gigio2"
+    }, {
+      "id": "6019b144-602d-4b15-8c98-4c4c97e14173",
+      "comment": "",
+      "command": "click",
+      "target": "id=email-field",
+      "targets": [
+        ["id=email-field", "id"],
+        ["name=email", "name"],
+        ["css=#email-field", "css:finder"],
+        ["xpath=//input[@id='email-field']", "xpath:attributes"],
+        ["xpath=//form[@id='edit-user-form']/div/div[2]/div/div/div/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f1b3638-2f98-4ea6-aeb4-8de972db4880",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-field",
+      "targets": [
+        ["id=email-field", "id"],
+        ["name=email", "name"],
+        ["css=#email-field", "css:finder"],
+        ["xpath=//input[@id='email-field']", "xpath:attributes"],
+        ["xpath=//form[@id='edit-user-form']/div/div[2]/div/div/div/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "gigio2@g.com"
+    }, {
+      "id": "225ba789-3067-463a-888f-7c6de83c8356",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-access-level",
+      "targets": [
+        ["id=edit-access-level", "id"],
+        ["name=access_level", "name"],
+        ["css=#edit-access-level", "css:finder"],
+        ["xpath=//select[@id='edit-access-level']", "xpath:attributes"],
+        ["xpath=//form[@id='edit-user-form']/div/div[2]/div/div/div/table/tbody/tr[4]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bc901f1-913e-4a17-9ca7-805b3285f268",
+      "comment": "",
+      "command": "select",
+      "target": "id=edit-access-level",
+      "targets": [],
+      "value": "label=administrador"
+    }, {
+      "id": "542b5a3d-341f-4f27-b53a-e594b1dbbfe6",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-access-level",
+      "targets": [
+        ["id=edit-access-level", "id"],
+        ["name=access_level", "name"],
+        ["css=#edit-access-level", "css:finder"],
+        ["xpath=//select[@id='edit-access-level']", "xpath:attributes"],
+        ["xpath=//form[@id='edit-user-form']/div/div[2]/div/div/div/table/tbody/tr[4]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8faf750d-7833-454c-b140-6d73b7875d56",
+      "comment": "",
+      "command": "click",
+      "target": "css=.widget-box:nth-child(1) .btn",
+      "targets": [
+        ["css=.widget-box:nth-child(1) .btn", "css:finder"],
+        ["xpath=//input[@value='Atualizar Usuário']", "xpath:attributes"],
+        ["xpath=//form[@id='edit-user-form']/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "22ee0d3e-dbd2-46fa-92c8-7bacb3b5e0af",
+    "name": "DeletUsuario",
+    "commands": [{
+      "id": "b3476805-70ec-4c90-aa83-ec9f4c5c7f64",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9521efe7-d562-4a6c-86ed-77b1086f3ab1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b51f49e9-1b6e-4f6e-be2c-a6c7636cb820",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(2)",
+      "targets": [
+        ["css=.icon-bar:nth-child(2)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddf54cec-80bd-4f20-beee-0817ae595b5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8fe635a-f300-4f93-b5c9-5dfcf90aa93c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Usuários",
+      "targets": [
+        ["linkText=Gerenciar Usuários", "linkText"],
+        ["css=.nav-tabs > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Usuários')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_user_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Usuários')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b77e6460-8c80-440a-9295-23cccffeebe4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=gigiou2",
+      "targets": [
+        ["linkText=gigiou2", "linkText"],
+        ["css=tr:nth-child(1) > td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'gigiou2')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_user_edit_page.php?user_id=53')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'gigiou2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb563042-8727-4e2a-927f-8d80674fbdad",
+      "comment": "",
+      "command": "click",
+      "target": "css=#manage-user-delete-form .btn",
+      "targets": [
+        ["css=#manage-user-delete-form .btn", "css:finder"],
+        ["xpath=//input[@value='Apagar Usuário']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-user-delete-form']/fieldset/span/input", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2eee51f0-43f7-481c-b8e2-e18cb4be538f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Apagar Conta']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "de72d446-cd35-4413-90f3-2f7ec3e55940",
+    "name": "CriarProjeto",
+    "commands": [{
+      "id": "c6d3d95a-28e5-4dcf-beca-1ec7a537bbbe",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/mantis/manage_proj_create_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b71c7f3-de85-4c14-b0f9-c635c4cca3c4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c7b558b-4678-44a4-903c-707627754a71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(4)",
+      "targets": [
+        ["css=.icon-bar:nth-child(4)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[4]", "xpath:idRelative"],
+        ["xpath=//span[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5205d98-2890-4b68-997f-82b45aef3752",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar",
+      "targets": [
+        ["linkText=Gerenciar", "linkText"],
+        ["css=.active:nth-child(6) > a", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_overview_page.php')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18a8b290-14c6-436a-97bb-97764839dced",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44a88b79-0552-4fb2-950b-43f1b18bf034",
+      "comment": "",
+      "command": "click",
+      "target": "css=.widget-toolbox > .form-inline > .btn",
+      "targets": [
+        ["css=.widget-toolbox > .form-inline > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Criar Novo Projeto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ef48198-4c34-43df-8608-6699e345e216",
+      "comment": "",
+      "command": "click",
+      "target": "id=project-name",
+      "targets": [
+        ["id=project-name", "id"],
+        ["name=name", "name"],
+        ["css=#project-name", "css:finder"],
+        ["xpath=//input[@id='project-name']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc25b7d3-1819-489b-9f8d-a9a061625d6f",
+      "comment": "",
+      "command": "type",
+      "target": "id=project-name",
+      "targets": [
+        ["id=project-name", "id"],
+        ["name=name", "name"],
+        ["css=#project-name", "css:finder"],
+        ["xpath=//input[@id='project-name']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "P01"
+    }, {
+      "id": "7e2cf84e-a640-4891-8b1d-4047d81c1494",
+      "comment": "",
+      "command": "click",
+      "target": "id=project-description",
+      "targets": [
+        ["id=project-description", "id"],
+        ["name=description", "name"],
+        ["css=#project-description", "css:finder"],
+        ["xpath=//textarea[@id='project-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr[5]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48a1dba5-cc03-45c5-8cb1-01f7b39f10a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=project-description",
+      "targets": [
+        ["id=project-description", "id"],
+        ["name=description", "name"],
+        ["css=#project-description", "css:finder"],
+        ["xpath=//textarea[@id='project-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr[5]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Novo Projeto"
+    }, {
+      "id": "a001adee-f43a-4557-869b-60699885230c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Adicionar projeto']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-create-form']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86945be9-c410-44ec-8283-5707e8a0cc63",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ebdcc67c-797b-4653-9e68-a3b9b7074585",
+    "name": "AtualizarProjeto",
+    "commands": [{
+      "id": "58d00a5d-06f5-4d9c-8128-cd3d4615972c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "485905a9-b812-4c2f-b56b-de8b7f2c3ce1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e41b1a7a-01a9-4c82-91d7-0cf451e777b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcef3483-1bf5-47ae-b7cb-7779ef6821f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81518eca-12e4-4e80-9921-0b59c8a64c02",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e9f10fe-daec-4fc2-9fc9-07537a8d8873",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=P01",
+      "targets": [
+        ["linkText=P01", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'P01')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_proj_edit_page.php?project_id=12')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95c45ebb-6f92-475f-874f-6d8b25874588",
+      "comment": "",
+      "command": "click",
+      "target": "id=project-name",
+      "targets": [
+        ["id=project-name", "id"],
+        ["name=name", "name"],
+        ["css=#project-name", "css:finder"],
+        ["xpath=//input[@id='project-name']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-update-form']/div/div[2]/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "776e5e3a-8c38-40aa-bf12-5bfd5b84efd2",
+      "comment": "",
+      "command": "type",
+      "target": "id=project-name",
+      "targets": [
+        ["id=project-name", "id"],
+        ["name=name", "name"],
+        ["css=#project-name", "css:finder"],
+        ["xpath=//input[@id='project-name']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-update-form']/div/div[2]/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "P01USJT"
+    }, {
+      "id": "3fc92a0f-fe31-4175-95b1-31929b5b3991",
+      "comment": "",
+      "command": "click",
+      "target": "id=project-description",
+      "targets": [
+        ["id=project-description", "id"],
+        ["name=description", "name"],
+        ["css=#project-description", "css:finder"],
+        ["xpath=//textarea[@id='project-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-update-form']/div/div[2]/div/div/table/tbody/tr[6]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4176f764-f543-4e0b-886e-c69dcb14ab48",
+      "comment": "",
+      "command": "type",
+      "target": "id=project-description",
+      "targets": [
+        ["id=project-description", "id"],
+        ["name=description", "name"],
+        ["css=#project-description", "css:finder"],
+        ["xpath=//textarea[@id='project-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-update-form']/div/div[2]/div/div/table/tbody/tr[6]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Base2 AT"
+    }, {
+      "id": "639fc42b-ed83-463b-8837-dfdc966fadba",
+      "comment": "",
+      "command": "click",
+      "target": "css=#manage-proj-update-form .btn",
+      "targets": [
+        ["css=#manage-proj-update-form .btn", "css:finder"],
+        ["xpath=//input[@value='Atualizar Projeto']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-update-form']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b43d2d71-3cc7-41c4-a02d-5301a9446d4f",
+    "name": "DeletProjeto",
+    "commands": [{
+      "id": "304554d9-1673-4b6a-9016-ec93ab11c5f6",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffa13eb2-e0a7-452b-93d6-49a5748e8d5e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86613d6c-ac21-4375-bdb0-e552c0a49e8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e757c3a-452e-4a24-85c6-f05ea87ac2fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10dcdbcd-6197-444b-aa68-8ac9cdb0ad68",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7197c03c-97de-4b33-a703-7769e8960905",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=P01USJT",
+      "targets": [
+        ["linkText=P01USJT", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'P01USJT')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_proj_edit_page.php?project_id=21')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbc8657e-0bcf-4487-ad3d-7710a6ebcfb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='Apagar Projeto']", "xpath:attributes"],
+        ["xpath=//form[@id='project-delete-form']/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f93ee3b-42c0-44e4-a52c-3786355a4c72",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Apagar Projeto']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dc7fb8a8-ddb6-4501-a2ff-8bbc43f58002",
+    "name": "CriarSubProjetos",
+    "commands": [{
+      "id": "6fa57e69-6212-4bc1-bdea-d19fd0643d66",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f43361d4-f09b-4189-b651-30a715932f7c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f521f988-4375-4752-a5e8-d8f6545dfe68",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89298d16-f59c-4e11-9f30-1af1e6bb4244",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c2ff8fa-e623-486a-9af6-2e75cead5c13",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "919229fa-9d40-43b9-9c35-bb851d6fd9ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9033a0b6-bce1-4632-abb2-a8fa6ac35cb6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a49800b1-3601-480f-9150-64f4a231ef4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-inline > .btn:nth-child(2)",
+      "targets": [
+        ["css=.form-inline > .btn:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='manage-project-update-subprojects-div']/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Criar novo Subprojeto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78e921a2-32d4-4b1f-b450-971bc536f4c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=project-name",
+      "targets": [
+        ["id=project-name", "id"],
+        ["name=name", "name"],
+        ["css=#project-name", "css:finder"],
+        ["xpath=//input[@id='project-name']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b01b05b-1157-49f9-9834-d3741f9b1039",
+      "comment": "",
+      "command": "type",
+      "target": "id=project-name",
+      "targets": [
+        ["id=project-name", "id"],
+        ["name=name", "name"],
+        ["css=#project-name", "css:finder"],
+        ["xpath=//input[@id='project-name']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "BaixarSotwares"
+    }, {
+      "id": "bea0a61e-b8a3-44a1-a7c6-275727abe44e",
+      "comment": "",
+      "command": "click",
+      "target": "id=project-description",
+      "targets": [
+        ["id=project-description", "id"],
+        ["name=description", "name"],
+        ["css=#project-description", "css:finder"],
+        ["xpath=//textarea[@id='project-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr[6]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a0e6e85-f5e0-4750-9342-818af0c54b6a",
+      "comment": "",
+      "command": "type",
+      "target": "id=project-description",
+      "targets": [
+        ["id=project-description", "id"],
+        ["name=description", "name"],
+        ["css=#project-description", "css:finder"],
+        ["xpath=//textarea[@id='project-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-create-form']/div/div[2]/div/div/table/tbody/tr[6]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Baixar o Mantis e o Selenium IDE para projeto de base2"
+    }, {
+      "id": "6f806098-d405-48f6-8a7c-4e9a35c3a9f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Adicionar projeto']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-create-form']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a99136fc-997f-43a0-b510-1749fae2b6e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-12",
+      "targets": [
+        ["css=.col-md-12", "css:finder"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "67c74eca-1d17-43c5-9b0d-65bcdab5f15d",
+    "name": "AtualizarSubProjetos",
+    "commands": [{
+      "id": "fdf71129-431e-4809-a8bb-1bee8681a9ca",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e0307cb-bdac-4390-b450-b1ef692a50c1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "445cff88-60e6-425d-8bd7-f8439668f672",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76da160c-a2e4-4c96-b302-bab51ec2a5e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd78d12b-2f5e-4b9b-b80a-336b6990300a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45a59e37-c947-432c-ae50-e93633af7fc3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=P01USJT",
+      "targets": [
+        ["linkText=P01USJT", "linkText"],
+        ["css=tr:nth-child(1) > td > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'P01USJT')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_proj_edit_page.php?project_id=31')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4658e656-b475-4bd0-afa3-ed45f0035bbf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Alterar",
+      "targets": [
+        ["linkText=Alterar", "linkText"],
+        ["css=.btn-xs:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Alterar')]", "xpath:link"],
+        ["xpath=//form[@id='manage-project-update-subprojects-form']/div/div[2]/div/fieldset/div/table/tbody/tr/td[7]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'manage_proj_edit_page.php?project_id=32')])[2]", "xpath:href"],
+        ["xpath=//td[7]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Alterar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ac0cb8b-0304-46fc-8afb-01dd3462c88d",
+      "comment": "",
+      "command": "click",
+      "target": "id=project-description",
+      "targets": [
+        ["id=project-description", "id"],
+        ["name=description", "name"],
+        ["css=#project-description", "css:finder"],
+        ["xpath=//textarea[@id='project-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-update-form']/div/div[2]/div/div/table/tbody/tr[6]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e84dbc4e-11bf-49ac-8046-c6cfa9696daf",
+      "comment": "",
+      "command": "type",
+      "target": "id=project-description",
+      "targets": [
+        ["id=project-description", "id"],
+        ["name=description", "name"],
+        ["css=#project-description", "css:finder"],
+        ["xpath=//textarea[@id='project-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-update-form']/div/div[2]/div/div/table/tbody/tr[6]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Baixar o Mantis e o Selenium IDE para projeto de base2,1.2"
+    }, {
+      "id": "33650fbc-ee5d-40af-9fb8-ca8b0d18de96",
+      "comment": "",
+      "command": "click",
+      "target": "css=.widget-toolbox > .btn",
+      "targets": [
+        ["css=.widget-toolbox > .btn", "css:finder"],
+        ["xpath=//input[@value='Atualizar Projeto']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-update-form']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a40a6c45-5de4-4f01-9973-06f62af33344",
+    "name": "DeletSubProjetos",
+    "commands": [{
+      "id": "de4eaa9b-982d-42b8-8837-45b194be0daa",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23c43cd8-e7e9-4f0c-a7d5-8b32e8d59b5f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcb9778c-8112-422e-8ad9-8d89a8cd9610",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60456cab-d89d-4136-8e74-d4fc6b4692ff",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b412831c-c8f0-4b7c-8a0a-445b1444b17d",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2b935fa-0e29-48ce-89f1-5ef7db7fd9a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88cd0239-b43b-4e35-946f-a46ea09f034e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9e21417-d8a2-4599-a80f-c3eec58569ac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=» BaixarSotwares",
+      "targets": [
+        ["linkText=» BaixarSotwares", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'» BaixarSotwares')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr[2]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_proj_edit_page.php?project_id=22')]", "xpath:href"],
+        ["xpath=//tr[2]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'» BaixarSotwares')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "818dbd44-0e1d-4358-9106-e5c20e4ceb1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='Apagar Projeto']", "xpath:attributes"],
+        ["xpath=//form[@id='project-delete-form']/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64fa4f16-c03a-462a-b73c-d1eb616c9873",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Apagar Projeto']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a9926f74-0362-47c5-bba7-7025508fc9d5",
+    "name": "CriarMarcador",
+    "commands": [{
+      "id": "e68f17ba-ff0b-4249-a57f-0ae8dc21a1dc",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5673598e-900b-4d79-b79c-dff63e6b24a8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7ab07e9-8cda-49b9-b279-1bf416ffec18",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5544aed7-00d8-47c6-8eaa-a896b70b3c4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f52cbd81-7205-490d-9f0f-275be30b24f8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Marcadores",
+      "targets": [
+        ["linkText=Gerenciar Marcadores", "linkText"],
+        ["css=.nav-tabs > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Marcadores')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_tags_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Marcadores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67f7efe4-4ffb-43ab-8793-d7124465b3c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=tag-name",
+      "targets": [
+        ["id=tag-name", "id"],
+        ["name=name", "name"],
+        ["css=#tag-name", "css:finder"],
+        ["xpath=//input[@id='tag-name']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-tags-create-form']/div/div[2]/div/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "026b7119-2818-490a-b1bc-1fae3e03e4e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=tag-name",
+      "targets": [
+        ["id=tag-name", "id"],
+        ["name=name", "name"],
+        ["css=#tag-name", "css:finder"],
+        ["xpath=//input[@id='tag-name']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-tags-create-form']/div/div[2]/div/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "Tarefas Completas"
+    }, {
+      "id": "2382a493-5b91-4688-8735-85f27e858b5b",
+      "comment": "",
+      "command": "click",
+      "target": "id=tag-description",
+      "targets": [
+        ["id=tag-description", "id"],
+        ["name=description", "name"],
+        ["css=#tag-description", "css:finder"],
+        ["xpath=//textarea[@id='tag-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-tags-create-form']/div/div[2]/div/div/div/table/tbody/tr[2]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6e0992b-1a60-4f29-a595-c8051ce13341",
+      "comment": "",
+      "command": "type",
+      "target": "id=tag-description",
+      "targets": [
+        ["id=tag-description", "id"],
+        ["name=description", "name"],
+        ["css=#tag-description", "css:finder"],
+        ["xpath=//textarea[@id='tag-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-tags-create-form']/div/div[2]/div/div/div/table/tbody/tr[2]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Marcar tarefas ou situação que não precisão de continuação ou revisão.  "
+    }, {
+      "id": "a485d136-9217-4589-b9ce-94cbe709fcab",
+      "comment": "",
+      "command": "click",
+      "target": "name=config_set",
+      "targets": [
+        ["name=config_set", "name"],
+        ["css=.btn-round:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='config_set']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-tags-create-form']/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b4113ca-4ba5-4329-b559-b1cdf8b1e23a",
+      "comment": "",
+      "command": "click",
+      "target": "id=tag-name",
+      "targets": [
+        ["id=tag-name", "id"],
+        ["name=name", "name"],
+        ["css=#tag-name", "css:finder"],
+        ["xpath=//input[@id='tag-name']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-tags-create-form']/div/div[2]/div/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ce9ee14-409b-4489-b78a-87a403d57427",
+      "comment": "",
+      "command": "type",
+      "target": "id=tag-name",
+      "targets": [
+        ["id=tag-name", "id"],
+        ["name=name", "name"],
+        ["css=#tag-name", "css:finder"],
+        ["xpath=//input[@id='tag-name']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-tags-create-form']/div/div[2]/div/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "Tarefas para Revisão"
+    }, {
+      "id": "fe3b2c88-061c-4804-a952-ea4535a52b16",
+      "comment": "",
+      "command": "click",
+      "target": "id=tag-description",
+      "targets": [
+        ["id=tag-description", "id"],
+        ["name=description", "name"],
+        ["css=#tag-description", "css:finder"],
+        ["xpath=//textarea[@id='tag-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-tags-create-form']/div/div[2]/div/div/div/table/tbody/tr[2]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb722cea-54b1-404a-91a7-48702d717805",
+      "comment": "",
+      "command": "type",
+      "target": "id=tag-description",
+      "targets": [
+        ["id=tag-description", "id"],
+        ["name=description", "name"],
+        ["css=#tag-description", "css:finder"],
+        ["xpath=//textarea[@id='tag-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-tags-create-form']/div/div[2]/div/div/div/table/tbody/tr[2]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Marcar qualquer tarefa que precise de revisão ou atualização"
+    }, {
+      "id": "379c1582-d8b7-4463-a301-fa9520a53e76",
+      "comment": "",
+      "command": "click",
+      "target": "name=config_set",
+      "targets": [
+        ["name=config_set", "name"],
+        ["css=.btn-round:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='config_set']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-tags-create-form']/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "26ca3248-4da7-4320-b6fa-f3ce589348fa",
+    "name": "CriarTarefaRevisão",
+    "commands": [{
+      "id": "73508123-31c0-4acf-a084-ba026884155b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0942e62b-c796-4d86-965a-9a1a62ac75a2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb2ee950-e665-451d-9e1b-2cbcd806a365",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0544abea-70f3-4457-ba46-09758870d277",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Criar Tarefa",
+      "targets": [
+        ["linkText=Criar Tarefa", "linkText"],
+        ["css=.nav-list > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/bug_report_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3328880-3df3-4130-b8b2-8b6415237b82",
+      "comment": "",
+      "command": "click",
+      "target": "id=reproducibility",
+      "targets": [
+        ["id=reproducibility", "id"],
+        ["name=reproducibility", "name"],
+        ["css=#reproducibility", "css:finder"],
+        ["xpath=//select[@id='reproducibility']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[2]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "119d2b4f-4977-49d7-b224-0d9cd7536c12",
+      "comment": "",
+      "command": "select",
+      "target": "id=reproducibility",
+      "targets": [],
+      "value": "label=aleatório"
+    }, {
+      "id": "ced4f353-6754-44d3-a6a8-dc36b2c5e44c",
+      "comment": "",
+      "command": "click",
+      "target": "id=reproducibility",
+      "targets": [
+        ["id=reproducibility", "id"],
+        ["name=reproducibility", "name"],
+        ["css=#reproducibility", "css:finder"],
+        ["xpath=//select[@id='reproducibility']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[2]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1db393f-591a-49a2-85dc-d74044e26faa",
+      "comment": "",
+      "command": "click",
+      "target": "id=severity",
+      "targets": [
+        ["id=severity", "id"],
+        ["name=severity", "name"],
+        ["css=#severity", "css:finder"],
+        ["xpath=//select[@id='severity']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[3]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccf33ac2-dcd6-451b-b680-6564ed8e79d0",
+      "comment": "",
+      "command": "select",
+      "target": "id=severity",
+      "targets": [],
+      "value": "label=obstáculo"
+    }, {
+      "id": "b7b99367-daf8-4691-8969-fbef6fb18988",
+      "comment": "",
+      "command": "click",
+      "target": "id=severity",
+      "targets": [
+        ["id=severity", "id"],
+        ["name=severity", "name"],
+        ["css=#severity", "css:finder"],
+        ["xpath=//select[@id='severity']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[3]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a8ec0fb-53c7-47f2-af05-a5219797a360",
+      "comment": "",
+      "command": "click",
+      "target": "id=priority",
+      "targets": [
+        ["id=priority", "id"],
+        ["name=priority", "name"],
+        ["css=#priority", "css:finder"],
+        ["xpath=//select[@id='priority']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[4]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[4]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e750fc1-83eb-47e3-b510-e9d39c394467",
+      "comment": "",
+      "command": "select",
+      "target": "id=priority",
+      "targets": [],
+      "value": "label=imediato"
+    }, {
+      "id": "98868d22-ce4f-4af3-8910-64fa4d663b0a",
+      "comment": "",
+      "command": "click",
+      "target": "id=priority",
+      "targets": [
+        ["id=priority", "id"],
+        ["name=priority", "name"],
+        ["css=#priority", "css:finder"],
+        ["xpath=//select[@id='priority']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[4]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[4]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09fee0b6-6dfc-465a-a2c6-490e6d412453",
+      "comment": "",
+      "command": "click",
+      "target": "id=summary",
+      "targets": [
+        ["id=summary", "id"],
+        ["name=summary", "name"],
+        ["css=#summary", "css:finder"],
+        ["xpath=//input[@id='summary']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[7]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6735c1bd-b950-4d0e-88c3-14f1fab360e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=summary",
+      "targets": [
+        ["id=summary", "id"],
+        ["name=summary", "name"],
+        ["css=#summary", "css:finder"],
+        ["xpath=//input[@id='summary']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[7]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "Revisão dos Bugs de Loading"
+    }, {
+      "id": "40d043be-570e-4455-a77c-27a5078e72a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[8]/td/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b6886d4-889b-418c-b55f-56edf9cf4f60",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[8]/td/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Durante a execução dos teste o Selenium trava nas telas de carregamento"
+    }, {
+      "id": "f3defacf-e2f2-4a26-aa44-1cc82b934c2b",
+      "comment": "",
+      "command": "click",
+      "target": "id=steps_to_reproduce",
+      "targets": [
+        ["id=steps_to_reproduce", "id"],
+        ["name=steps_to_reproduce", "name"],
+        ["css=#steps_to_reproduce", "css:finder"],
+        ["xpath=//textarea[@id='steps_to_reproduce']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[9]/td/textarea", "xpath:idRelative"],
+        ["xpath=//tr[9]/td/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd63c392-041d-496a-a099-f169e60c1af0",
+      "comment": "",
+      "command": "type",
+      "target": "id=steps_to_reproduce",
+      "targets": [
+        ["id=steps_to_reproduce", "id"],
+        ["name=steps_to_reproduce", "name"],
+        ["css=#steps_to_reproduce", "css:finder"],
+        ["xpath=//textarea[@id='steps_to_reproduce']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[9]/td/textarea", "xpath:idRelative"],
+        ["xpath=//tr[9]/td/textarea", "xpath:position"]
+      ],
+      "value": "Sem representação para recriar o passo a passo "
+    }, {
+      "id": "a4b4dfed-a170-4664-b313-7c8464fb9806",
+      "comment": "",
+      "command": "click",
+      "target": "id=additional_info",
+      "targets": [
+        ["id=additional_info", "id"],
+        ["name=additional_info", "name"],
+        ["css=#additional_info", "css:finder"],
+        ["xpath=//textarea[@id='additional_info']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[10]/td/textarea", "xpath:idRelative"],
+        ["xpath=//tr[10]/td/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f485a0f2-bef7-4e05-a874-61ca3fe6038c",
+      "comment": "",
+      "command": "type",
+      "target": "id=additional_info",
+      "targets": [
+        ["id=additional_info", "id"],
+        ["name=additional_info", "name"],
+        ["css=#additional_info", "css:finder"],
+        ["xpath=//textarea[@id='additional_info']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[10]/td/textarea", "xpath:idRelative"],
+        ["xpath=//tr[10]/td/textarea", "xpath:position"]
+      ],
+      "value": "Tela de loading interminável do Selenium"
+    }, {
+      "id": "9de8be31-095b-4327-9589-981338adb318",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Criar Nova Tarefa']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b6b1af1b-10b8-44ad-aa4e-388d779fa95d",
+    "name": "AtribuirSubProjeto",
+    "commands": [{
+      "id": "6b24d582-1858-46a9-b9ff-cd9bcb1573d3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16cf8355-ec4c-41ce-b967-54d50078ee1b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a760acc-6485-489c-a097-c5076b20eacc",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68122f95-e04a-43e8-9def-9087bfded7f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4334dc99-56ac-497f-986b-1dec42536b14",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d745463b-b0ac-404f-98d5-a14fd6b9b0a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) a",
+      "targets": [
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'P01USJT')])[3]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr[2]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_proj_edit_page.php?project_id=17')]", "xpath:href"],
+        ["xpath=//tr[2]/td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db767026-f034-44e6-b8d5-d718557f44df",
+      "comment": "",
+      "command": "click",
+      "target": "name=subproject_id",
+      "targets": [
+        ["name=subproject_id", "name"],
+        ["css=.widget-main > fieldset > .input-sm", "css:finder"],
+        ["xpath=//select[@name='subproject_id']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-subproject-add-form']/div/div/fieldset/select", "xpath:idRelative"],
+        ["xpath=//fieldset/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c50ed7f9-f43b-45cb-b530-2251dd06a864",
+      "comment": "",
+      "command": "select",
+      "target": "name=subproject_id",
+      "targets": [],
+      "value": "label=BaixarSotwares"
+    }, {
+      "id": "3b425214-6dc6-494c-9734-23298cb85e43",
+      "comment": "",
+      "command": "click",
+      "target": "name=subproject_id",
+      "targets": [
+        ["name=subproject_id", "name"],
+        ["css=.widget-main > fieldset > .input-sm", "css:finder"],
+        ["xpath=//select[@name='subproject_id']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-subproject-add-form']/div/div/fieldset/select", "xpath:idRelative"],
+        ["xpath=//fieldset/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b9d17ec-40f9-4ea1-9335-2bc61dba2e6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.widget-main .btn",
+      "targets": [
+        ["css=.widget-main .btn", "css:finder"],
+        ["xpath=//input[@value='Adicionar como Subprojeto']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-subproject-add-form']/div/div/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//div/fieldset/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "095992ce-74cc-4576-900f-5690e1a75336",
+    "name": "DeletTarefas",
+    "commands": [{
+      "id": "d9c65972-e202-4a99-878a-980fd7639236",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83b25a23-cbf3-47a4-81f2-786a58f38931",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a971cf12-34f0-481b-ba02-b93dc3784f7d",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfe7f1a3-e649-40ae-a862-9d19dd9ed4ca",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.icon-bar:nth-child(4)",
+      "targets": [
+        ["css=.icon-bar:nth-child(4)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[4]", "xpath:idRelative"],
+        ["xpath=//span[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d74d874-7a6c-4b78-bf98-8a15ca6523e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1bf1194-fe5c-45b7-9bb7-24db10c3ac80",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .menu-text",
+      "targets": [
+        ["css=li:nth-child(2) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35235de9-f0cc-412b-94e9-db841332d148",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody .column-id > a",
+      "targets": [
+        ["css=tbody .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000005')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/mantis/view.php?id=5')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47e282c1-5751-472d-965f-416ef7f12cff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-left:nth-child(9) .btn",
+      "targets": [
+        ["css=.pull-left:nth-child(9) .btn", "css:finder"],
+        ["xpath=//input[@value='Apagar']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tfoot/tr/td/div/div[9]/form/fieldset/input[4]", "xpath:idRelative"],
+        ["xpath=//div[9]/form/fieldset/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "346d41f8-3c50-4bab-b77b-29c517b1836f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Apagar Tarefas']", "xpath:attributes"],
+        ["xpath=//div[@id='action-group-div']/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a68e8a9b-afee-466c-9ccd-0967100ce4cf",
+    "name": "DeletMarcador",
+    "commands": [{
+      "id": "6bd7cb36-defa-4652-9052-0e1140f42948",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14fa6f3e-bf78-4356-af44-ff76d8544dc2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "109736c2-d464-460a-8736-666770854a17",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.icon-bar:nth-child(2)",
+      "targets": [
+        ["css=.icon-bar:nth-child(2)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c64c51e-96da-43fa-ab36-007efbd35c25",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "798590d1-ba76-4cfa-a39d-74a31cb9b29f",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4b079e5-7b37-4b82-8ed6-f62cb298c25e",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(6) .menu-text",
+      "targets": [
+        ["css=li:nth-child(6) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[6]/a/span", "xpath:idRelative"],
+        ["xpath=//li[6]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2843d49-36e2-43d9-a3db-7986e8be4276",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Marcadores",
+      "targets": [
+        ["linkText=Gerenciar Marcadores", "linkText"],
+        ["css=.nav-tabs > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Marcadores')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_tags_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Marcadores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4407848-08a0-4910-96c0-2eaaecbf1af5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tarefas Completas",
+      "targets": [
+        ["linkText=Tarefas Completas", "linkText"],
+        ["css=tr:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Tarefas Completas')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'tag_view_page.php?tag_id=9')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tarefas Completas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2fc4f9a-eeec-4471-939a-11e86c106b15",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='Apagar Marcador']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[3]/form[2]/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78195bf9-48f4-4472-bcee-388ba23c1f89",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Apagar Marcador']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc7c340c-1d82-4ce7-8db8-6fdae6743e32",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tarefas para Revisão",
+      "targets": [
+        ["linkText=Tarefas para Revisão", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Tarefas para Revisão')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'tag_view_page.php?tag_id=10')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tarefas para Revisão')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70ba310d-1554-48e9-b7a8-98dd32e068db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='Apagar Marcador']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[3]/form[2]/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfe30a72-d199-43c0-9e91-3b97cefcc2ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Apagar Marcador']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5c44b660-ac62-4ff0-849d-858e10afd0e4",
+    "name": "AddPTT",
+    "commands": [{
+      "id": "ecec4f90-b251-4bf6-8d72-38a74b6cef8e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38186c5a-3807-4783-8d70-1037b80ac274",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da2520ce-ba0a-4510-ac4a-34c666b68dfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cec1fb2f-9977-4fd3-9f18-f6f86bb7e58d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) .menu-text",
+      "targets": [
+        ["css=li:nth-child(3) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Criar Tarefa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d24a4fa-33c1-4c46-9136-2c7ac9d898e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=select-project-id",
+      "targets": [
+        ["id=select-project-id", "id"],
+        ["name=project_id", "name"],
+        ["css=#select-project-id", "css:finder"],
+        ["xpath=//select[@id='select-project-id']", "xpath:attributes"],
+        ["xpath=//form[@id='select-project-form']/div/div[2]/div/div/table/tbody/tr/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'P01USJT\n » BaixarSotwares')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46c6be29-b4d2-4144-a6d9-245712643aa6",
+      "comment": "",
+      "command": "click",
+      "target": "id=select-project-id",
+      "targets": [
+        ["id=select-project-id", "id"],
+        ["name=project_id", "name"],
+        ["css=#select-project-id", "css:finder"],
+        ["xpath=//select[@id='select-project-id']", "xpath:attributes"],
+        ["xpath=//form[@id='select-project-form']/div/div[2]/div/div/table/tbody/tr/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'P01USJT\n » BaixarSotwares')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbb5e562-6daa-4707-86ec-62683f26e8b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Selecionar Projeto']", "xpath:attributes"],
+        ["xpath=//form[@id='select-project-form']/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3c779d3b-4ef0-4214-b6c9-f45fa3a92a87",
+    "name": "AtribuirUserToTarefa",
+    "commands": [{
+      "id": "ac4eee28-ad3b-4140-89a1-4ec87902c7f3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1127e2b-7103-433a-b0b8-3e18435068b8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01095f27-31c1-46ce-aeee-fe6a6e8245e2",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd3f6f53-6819-4530-b95c-cc1eb70e0515",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.icon-bar:nth-child(4)",
+      "targets": [
+        ["css=.icon-bar:nth-child(4)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[4]", "xpath:idRelative"],
+        ["xpath=//span[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44102e57-aea9-40a3-aee6-043175447298",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56638819-656c-437a-9763-473fc3cb21b0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ver Tarefas",
+      "targets": [
+        ["linkText=Ver Tarefas", "linkText"],
+        ["css=.nav-list > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/view_all_bug_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94283561-bfe9-4951-81a0-4e874c338e42",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody .column-id > a",
+      "targets": [
+        ["css=tbody .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000005')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/mantis/view.php?id=5')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26987475-77a9-4b48-9d67-67589f44adbf",
+      "comment": "",
+      "command": "click",
+      "target": "name=handler_id",
+      "targets": [
+        ["name=handler_id", "name"],
+        ["css=.pull-left:nth-child(2) .input-sm", "css:finder"],
+        ["xpath=//select[@name='handler_id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tfoot/tr/td/div/div[2]/form/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b82fffd-896b-4f8a-9cc0-a4342c7140b0",
+      "comment": "",
+      "command": "select",
+      "target": "name=handler_id",
+      "targets": [],
+      "value": "label=gigiou2"
+    }, {
+      "id": "c1250217-fac4-4f92-b367-895eadbccde2",
+      "comment": "",
+      "command": "click",
+      "target": "name=handler_id",
+      "targets": [
+        ["name=handler_id", "name"],
+        ["css=.pull-left:nth-child(2) .input-sm", "css:finder"],
+        ["xpath=//select[@name='handler_id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tfoot/tr/td/div/div[2]/form/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14ce70ec-dba4-44ef-b1c5-47e83cb0fe8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-inline:nth-child(1) > .btn:nth-child(4)",
+      "targets": [
+        ["css=.form-inline:nth-child(1) > .btn:nth-child(4)", "css:finder"],
+        ["xpath=//input[@value='Atribuir a:']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tfoot/tr/td/div/div[2]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "230bc3e2-8780-4f2e-9082-2e5e0fe5696a",
+    "name": "AtribuirMarcadorToTarefa",
+    "commands": [{
+      "id": "5dc9d4de-69a6-4d98-b8a5-b0d6c5632943",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38d0e019-785f-42f1-b939-bf7ab5f3674b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecf4dc33-7e59-46d7-bd37-d80a03d1a51e",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "498fae03-2ca7-4403-9f1f-cfecdfec01b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .menu-text",
+      "targets": [
+        ["css=li:nth-child(2) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6dd1948-b433-4b0e-9f14-90579cd4848a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody .column-id > a",
+      "targets": [
+        ["css=tbody .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000005')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/mantis/view.php?id=5')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0592756-7a9a-4d3d-841d-dc13dc9be5f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=tag_select",
+      "targets": [
+        ["id=tag_select", "id"],
+        ["name=tag_select", "name"],
+        ["css=#tag_select", "css:finder"],
+        ["xpath=//select[@id='tag_select']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tbody/tr[15]/td/form/select", "xpath:idRelative"],
+        ["xpath=//td/form/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28d48b21-4027-4c5d-90ab-4aa380e90a25",
+      "comment": "",
+      "command": "select",
+      "target": "id=tag_select",
+      "targets": [],
+      "value": "label=Marcadores atuais"
+    }, {
+      "id": "93b5f8b5-5446-4faf-9cdb-7af836bd12ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=tag_select",
+      "targets": [
+        ["id=tag_select", "id"],
+        ["name=tag_select", "name"],
+        ["css=#tag_select", "css:finder"],
+        ["xpath=//select[@id='tag_select']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tbody/tr[15]/td/form/select", "xpath:idRelative"],
+        ["xpath=//td/form/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e161c16f-4434-4847-a2a4-ff13b65fdb61",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(7)",
+      "targets": [
+        ["css=.btn:nth-child(7)", "css:finder"],
+        ["xpath=//input[@value='Aplicar']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tbody/tr[15]/td/form/input[5]", "xpath:idRelative"],
+        ["xpath=//td/form/input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1d055763-b0b6-460e-aa82-44474ba31d93",
+    "name": "CriarTarefa30CasosDeTeste",
+    "commands": [{
+      "id": "ac3c354b-1bbc-4c8d-8dbf-34e82c50653d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3c20f12-f4f8-42e8-bbbc-38d786a39d2b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8624253a-26ac-458a-87f3-a68c990ef404",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "693aef9d-794e-4512-829e-74e210a3fc0d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Criar Tarefa",
+      "targets": [
+        ["linkText=Criar Tarefa", "linkText"],
+        ["css=.nav-list > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/bug_report_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3823cf9f-2f92-42e2-8ff8-2e6f976ac78d",
+      "comment": "",
+      "command": "click",
+      "target": "id=reproducibility",
+      "targets": [
+        ["id=reproducibility", "id"],
+        ["name=reproducibility", "name"],
+        ["css=#reproducibility", "css:finder"],
+        ["xpath=//select[@id='reproducibility']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[2]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e85afa7-13a3-4b34-be1b-813c98b87823",
+      "comment": "",
+      "command": "select",
+      "target": "id=reproducibility",
+      "targets": [],
+      "value": "label=às vezes"
+    }, {
+      "id": "18122b2c-f5e8-450d-8dd6-a9b7bdb949cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=reproducibility",
+      "targets": [
+        ["id=reproducibility", "id"],
+        ["name=reproducibility", "name"],
+        ["css=#reproducibility", "css:finder"],
+        ["xpath=//select[@id='reproducibility']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[2]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "faa06b96-b1b8-4c47-8795-861f2c7d3c5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=severity",
+      "targets": [
+        ["id=severity", "id"],
+        ["name=severity", "name"],
+        ["css=#severity", "css:finder"],
+        ["xpath=//select[@id='severity']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[3]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50bd6ee2-1e6a-4899-83d6-ccf6e1bf3741",
+      "comment": "",
+      "command": "select",
+      "target": "id=severity",
+      "targets": [],
+      "value": "label=recurso"
+    }, {
+      "id": "46591d95-731e-41b0-a05d-50b0cc727863",
+      "comment": "",
+      "command": "click",
+      "target": "id=severity",
+      "targets": [
+        ["id=severity", "id"],
+        ["name=severity", "name"],
+        ["css=#severity", "css:finder"],
+        ["xpath=//select[@id='severity']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[3]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85ca9795-5740-416d-9e69-9192cdec1b4a",
+      "comment": "",
+      "command": "click",
+      "target": "id=priority",
+      "targets": [
+        ["id=priority", "id"],
+        ["name=priority", "name"],
+        ["css=#priority", "css:finder"],
+        ["xpath=//select[@id='priority']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[4]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[4]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5bcd096-722d-4fd2-999b-a0c1a1a033cd",
+      "comment": "",
+      "command": "select",
+      "target": "id=priority",
+      "targets": [],
+      "value": "label=normal"
+    }, {
+      "id": "b0f88522-d7b6-4b47-945f-729b43928802",
+      "comment": "",
+      "command": "click",
+      "target": "id=priority",
+      "targets": [
+        ["id=priority", "id"],
+        ["name=priority", "name"],
+        ["css=#priority", "css:finder"],
+        ["xpath=//select[@id='priority']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[4]/td/select", "xpath:idRelative"],
+        ["xpath=//tr[4]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "537e7cc5-9ce5-487c-a500-1de968581e89",
+      "comment": "",
+      "command": "click",
+      "target": "id=summary",
+      "targets": [
+        ["id=summary", "id"],
+        ["name=summary", "name"],
+        ["css=#summary", "css:finder"],
+        ["xpath=//input[@id='summary']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[7]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78a9b889-2b9f-46fe-b8c6-20076128a252",
+      "comment": "",
+      "command": "type",
+      "target": "id=summary",
+      "targets": [
+        ["id=summary", "id"],
+        ["name=summary", "name"],
+        ["css=#summary", "css:finder"],
+        ["xpath=//input[@id='summary']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[7]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "Criar 30 casos de teste"
+    }, {
+      "id": "7b9b7f81-4748-4a71-bf1c-7b86904dccbe",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[8]/td/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "079076cb-0855-4960-bfc2-863a8d269aec",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[8]/td/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Criar 30 casos de teste para avaliação do Selenium"
+    }, {
+      "id": "ece179ef-548f-4c8e-926f-bf30bb0c62e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=steps_to_reproduce",
+      "targets": [
+        ["id=steps_to_reproduce", "id"],
+        ["name=steps_to_reproduce", "name"],
+        ["css=#steps_to_reproduce", "css:finder"],
+        ["xpath=//textarea[@id='steps_to_reproduce']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[9]/td/textarea", "xpath:idRelative"],
+        ["xpath=//tr[9]/td/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd8024b6-6517-4dca-87ba-659d3d32d603",
+      "comment": "",
+      "command": "type",
+      "target": "id=steps_to_reproduce",
+      "targets": [
+        ["id=steps_to_reproduce", "id"],
+        ["name=steps_to_reproduce", "name"],
+        ["css=#steps_to_reproduce", "css:finder"],
+        ["xpath=//textarea[@id='steps_to_reproduce']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[9]/td/textarea", "xpath:idRelative"],
+        ["xpath=//tr[9]/td/textarea", "xpath:position"]
+      ],
+      "value": "Usar o Selenium para a criação de casos de testes e atribuir nos suits tests. "
+    }, {
+      "id": "83d9a22f-0569-4090-9e96-79a16fc58e3d",
+      "comment": "",
+      "command": "click",
+      "target": "id=additional_info",
+      "targets": [
+        ["id=additional_info", "id"],
+        ["name=additional_info", "name"],
+        ["css=#additional_info", "css:finder"],
+        ["xpath=//textarea[@id='additional_info']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[10]/td/textarea", "xpath:idRelative"],
+        ["xpath=//tr[10]/td/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c9ced67-180c-46a2-a12f-81e3f9bf7523",
+      "comment": "",
+      "command": "type",
+      "target": "id=additional_info",
+      "targets": [
+        ["id=additional_info", "id"],
+        ["name=additional_info", "name"],
+        ["css=#additional_info", "css:finder"],
+        ["xpath=//textarea[@id='additional_info']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div/div/table/tbody/tr[10]/td/textarea", "xpath:idRelative"],
+        ["xpath=//tr[10]/td/textarea", "xpath:position"]
+      ],
+      "value": "Entrega para dia 28/05"
+    }, {
+      "id": "45f7e6e7-e79f-454e-80bd-2812e8586cad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Criar Nova Tarefa']", "xpath:attributes"],
+        ["xpath=//form[@id='report_bug_form']/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "913707b1-9bcd-4022-8ae7-f341963ba29a",
+    "name": "DesAtribuirUserToTarefa",
+    "commands": [{
+      "id": "2c6b24f7-b806-416f-88c2-55bb4dba372a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37b93dae-655b-4f5e-8f86-90161570728c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24cf7d54-9b22-43ed-a7e7-8e99909c3326",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bd1fa0b-06bf-4fec-9a61-12d2d50149a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .menu-text",
+      "targets": [
+        ["css=li:nth-child(2) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23efdf86-6887-4154-8586-b539a3bbd700",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody > tr:nth-child(1) > .column-id > a",
+      "targets": [
+        ["css=tbody > tr:nth-child(1) > .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000011')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/mantis/view.php?id=11')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c156686-e204-414e-8ca9-1273d6dac864",
+      "comment": "",
+      "command": "click",
+      "target": "css=.padding-right-8 fieldset > .btn",
+      "targets": [
+        ["css=.padding-right-8 fieldset > .btn", "css:finder"],
+        ["xpath=//input[@value='Alterar']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tfoot/tr/td/div/div/form/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "679205cb-833c-4c1c-9d77-fd11dc7215cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=handler_id",
+      "targets": [
+        ["id=handler_id", "id"],
+        ["name=handler_id", "name"],
+        ["css=#handler_id", "css:finder"],
+        ["xpath=//select[@id='handler_id']", "xpath:attributes"],
+        ["xpath=//form[@id='update_bug_form']/div/div[2]/div/div/table/tbody/tr[5]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be163b46-511d-4790-8d7c-82a2f5251705",
+      "comment": "",
+      "command": "select",
+      "target": "id=handler_id",
+      "targets": [],
+      "value": "label="
+    }, {
+      "id": "2ebfa4c1-eb7a-4d8a-bb83-a406b58d124e",
+      "comment": "",
+      "command": "click",
+      "target": "id=handler_id",
+      "targets": [
+        ["id=handler_id", "id"],
+        ["name=handler_id", "name"],
+        ["css=#handler_id", "css:finder"],
+        ["xpath=//select[@id='handler_id']", "xpath:attributes"],
+        ["xpath=//form[@id='update_bug_form']/div/div[2]/div/div/table/tbody/tr[5]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b86b5bda-b4d9-4d1c-b4a9-e1f748ecf229",
+    "name": "BuscarUser",
+    "commands": [{
+      "id": "00022397-dbf9-491d-943b-e93521a98f82",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66bc71eb-e6a9-4859-afea-5cdade8863f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47f544ce-10bc-468c-ba1f-471fc08fbff7",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da56fa39-9b7e-4e64-a30a-16807932fc2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a4cb8ec-83a2-48d7-ac08-3f57c386b40a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Usuários",
+      "targets": [
+        ["linkText=Gerenciar Usuários", "linkText"],
+        ["css=.nav-tabs > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Usuários')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_user_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Usuários')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4c79b56-0726-476c-9408-838e31f497b2",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-user-filter']/fieldset/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86abbe1c-45f4-4855-891d-40ec05bfd26f",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-user-filter']/fieldset/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "gigio"
+    }, {
+      "id": "5834c75f-265b-4a72-9687-3595a885b322",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sm:nth-child(9)",
+      "targets": [
+        ["css=.btn-sm:nth-child(9)", "css:finder"],
+        ["xpath=//input[@value='Aplicar Filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-user-filter']/fieldset/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fef9db49-38d4-45d4-9611-70b0c94a0370",
+    "name": "CriarCategoria ",
+    "commands": [{
+      "id": "a1179a8d-af00-4864-8a02-4fea89b51f55",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4852e4ba-e957-4b2e-b894-48c570b756e2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae34b8e9-2c95-4614-99be-5044251919e7",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d57e7d8b-7dc2-4751-b11b-3168b365f8b6",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea9c29e6-5caf-4755-a942-7e261c82ae36",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15b54100-0ab0-4b7c-b8ce-b1268c279de9",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a47b162-8977-415c-8491-ccbe3f272f8b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "416401da-eea2-4bfb-a9b6-ea649bfb36d6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=P01USJT",
+      "targets": [
+        ["linkText=P01USJT", "linkText"],
+        ["css=tr:nth-child(1) > td > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'P01USJT')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_proj_edit_page.php?project_id=31')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3394d780-56f4-403d-a05b-c0cee0a6c261",
+      "comment": "",
+      "command": "click",
+      "target": "css=#project-add-category-form .input-sm",
+      "targets": [
+        ["css=#project-add-category-form .input-sm", "css:finder"],
+        ["xpath=(//input[@name='name'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='project-add-category-form']/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8e73a2c-4616-4d8e-bb09-26a47e8d04c1",
+      "comment": "",
+      "command": "type",
+      "target": "css=#project-add-category-form .input-sm",
+      "targets": [
+        ["css=#project-add-category-form .input-sm", "css:finder"],
+        ["xpath=(//input[@name='name'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='project-add-category-form']/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/input[3]", "xpath:position"]
+      ],
+      "value": "Categoria01"
+    }, {
+      "id": "d9d08e0c-6395-4fec-97ee-338e924f801f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#project-add-category-form .btn:nth-child(4)",
+      "targets": [
+        ["css=#project-add-category-form .btn:nth-child(4)", "css:finder"],
+        ["xpath=//input[@value='Adicionar Categoria']", "xpath:attributes"],
+        ["xpath=//form[@id='project-add-category-form']/fieldset/input[4]", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "35284a09-d618-48c7-9f87-6287e1983ef5",
+    "name": "AlterarCategoria",
+    "commands": [{
+      "id": "2a46fe65-305d-453c-9051-4c53953d451a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5e52e94-1db3-4cf7-87a2-3ad8095b4065",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48e8f639-e954-44ba-ad74-966475bf4b45",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6445918a-db7b-43b4-8114-a113824f5f11",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5a14104-dd2a-4d97-85f4-72acfdd106f8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d58e0323-3ceb-4dd0-acfb-5e555f6290dd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=P01USJT",
+      "targets": [
+        ["linkText=P01USJT", "linkText"],
+        ["css=tr:nth-child(1) > td > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'P01USJT')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_proj_edit_page.php?project_id=31')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd1b3127-8d14-4394-adfe-63e5181917be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-left:nth-child(1) .btn",
+      "targets": [
+        ["css=.pull-left:nth-child(1) .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='categories']/div/div[3]/div/div/table/tbody/tr/td[3]/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//td[3]/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Alterar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b85f841a-83c0-454b-84e0-1c62bb47bc5f",
+      "comment": "",
+      "command": "click",
+      "target": "id=proj-category-name",
+      "targets": [
+        ["id=proj-category-name", "id"],
+        ["name=name", "name"],
+        ["css=#proj-category-name", "css:finder"],
+        ["xpath=//input[@id='proj-category-name']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-category-update-form']/div/div[2]/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd9d573f-446e-4ed1-b028-e02c3d815034",
+      "comment": "",
+      "command": "type",
+      "target": "id=proj-category-name",
+      "targets": [
+        ["id=proj-category-name", "id"],
+        ["name=name", "name"],
+        ["css=#proj-category-name", "css:finder"],
+        ["xpath=//input[@id='proj-category-name']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-category-update-form']/div/div[2]/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "Categoria1.1"
+    }, {
+      "id": "847da52c-8cba-4a4e-aedc-94b57f5d74e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Atualizar Categoria']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-category-update-form']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c6e6933d-115d-4289-82e1-b594ae9cad75",
+    "name": "Delet Categoria",
+    "commands": [{
+      "id": "a0abcf86-c1af-4f86-ae5b-ff4141cf10c1",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06f88748-debe-43a8-8b28-3d2f90cb1a78",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30bb9768-431e-4435-9c25-6d4bd7e35ba3",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "963ff754-0c73-4573-89e1-ac8bd3538fe7",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4781ef6d-7ca5-4081-9d04-c2256561e827",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "472e1114-b341-41cb-af2c-3eb3c002d0e2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=P01USJT",
+      "targets": [
+        ["linkText=P01USJT", "linkText"],
+        ["css=tr:nth-child(1) > td > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'P01USJT')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_proj_edit_page.php?project_id=31')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c58067d-d28c-4571-bb68-4b9abd29503f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-left:nth-child(2) .btn",
+      "targets": [
+        ["css=.pull-left:nth-child(2) .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='categories']/div/div[3]/div/div/table/tbody/tr/td[3]/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//td[3]/div/div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Apagar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f404a07e-997f-45e4-aad3-7700face6b08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Apagar Categoria']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ffceaaa6-89ee-4df8-b250-b72ff981ea1f",
+    "name": "AtribuirUserCategoria",
+    "commands": [{
+      "id": "b5efaac0-81fd-4f91-9c67-c570597c44e9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec973278-0b55-4309-b51c-d09f1f64e666",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17b517b3-9aa9-4d41-84ec-1d3044b9a178",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a042169a-4b3c-4b68-92b0-a59c125f54f6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar",
+      "targets": [
+        ["linkText=Gerenciar", "linkText"],
+        ["css=li:nth-child(7) > a", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_overview_page.php')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9b9523e-4211-43e2-9202-6ae659c91ed6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da145240-d937-4f86-b547-2f07758d7082",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=P01USJT",
+      "targets": [
+        ["linkText=P01USJT", "linkText"],
+        ["css=tr:nth-child(1) > td > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'P01USJT')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_proj_edit_page.php?project_id=31')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3915cfc-2a8a-4610-be07-9e2f3aaaf400",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-left:nth-child(1) .btn",
+      "targets": [
+        ["css=.pull-left:nth-child(1) .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='categories']/div/div[3]/div/div/table/tbody/tr/td[3]/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//td[3]/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Alterar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1394a974-45ae-45aa-8c7d-ef6312aebc33",
+      "comment": "",
+      "command": "click",
+      "target": "id=proj-category-assigned-to",
+      "targets": [
+        ["id=proj-category-assigned-to", "id"],
+        ["name=assigned_to", "name"],
+        ["css=#proj-category-assigned-to", "css:finder"],
+        ["xpath=//select[@id='proj-category-assigned-to']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-category-update-form']/div/div[2]/div/div/table/tbody/tr[2]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c539da28-ab55-4bf9-8858-a3dc8c4e2dbf",
+      "comment": "",
+      "command": "select",
+      "target": "id=proj-category-assigned-to",
+      "targets": [],
+      "value": "label=gigiou2"
+    }, {
+      "id": "5741bb8a-2307-4552-b572-c51852875d63",
+      "comment": "",
+      "command": "click",
+      "target": "id=proj-category-assigned-to",
+      "targets": [
+        ["id=proj-category-assigned-to", "id"],
+        ["name=assigned_to", "name"],
+        ["css=#proj-category-assigned-to", "css:finder"],
+        ["xpath=//select[@id='proj-category-assigned-to']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-category-update-form']/div/div[2]/div/div/table/tbody/tr[2]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d4e85ea-ee31-4566-a8d1-ce8c7ad20bf8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Atualizar Categoria']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-category-update-form']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "09d5cc6d-261b-4e71-a4b1-fbf87bc356fd",
+    "name": "CriarVS",
+    "commands": [{
+      "id": "18063de9-4c2b-4f35-85ac-289db7775fc6",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "434c070a-164c-42ce-8ed7-e8973263fcb6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73562565-1d4f-4cee-82f0-5aa9cc108b67",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a31c3e6-23c5-476b-854d-ea34b0269781",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.icon-bar:nth-child(4)",
+      "targets": [
+        ["css=.icon-bar:nth-child(4)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[4]", "xpath:idRelative"],
+        ["xpath=//span[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35cc44d9-a677-4679-95ff-55d6b7cadce5",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff9c57d2-5012-46a2-a9e0-5254430e9696",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar",
+      "targets": [
+        ["linkText=Gerenciar", "linkText"],
+        ["css=li:nth-child(7) > a", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_overview_page.php')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dbdc264-f12b-4fe1-aa12-6dadefe2cc7b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3f4f30c-7e6e-4d65-b553-69c9f5b277a9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=P01USJT",
+      "targets": [
+        ["linkText=P01USJT", "linkText"],
+        ["css=tr:nth-child(1) > td:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'P01USJT')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_proj_edit_page.php?project_id=33')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2fe3c69-8af1-4d7d-a34b-03c842ba6c21",
+      "comment": "",
+      "command": "click",
+      "target": "name=version",
+      "targets": [
+        ["name=version", "name"],
+        ["css=#manage-project-add-version-form .input-sm", "css:finder"],
+        ["xpath=//input[@name='version']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-add-version-form']/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/div[4]/form/fieldset/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1677b6d9-efb1-401c-853b-090a7fb0b63d",
+      "comment": "",
+      "command": "type",
+      "target": "name=version",
+      "targets": [
+        ["name=version", "name"],
+        ["css=#manage-project-add-version-form .input-sm", "css:finder"],
+        ["xpath=//input[@name='version']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-add-version-form']/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/div[4]/form/fieldset/input[3]", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "38f552d7-2899-42c1-91f7-13be207c3435",
+      "comment": "",
+      "command": "click",
+      "target": "name=add_version",
+      "targets": [
+        ["name=add_version", "name"],
+        ["css=#manage-project-add-version-form .btn:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='add_version']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-project-add-version-form']/fieldset/input[4]", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/div[4]/form/fieldset/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5a46b097-1e9c-4a0c-b743-4706ee00c805",
+    "name": "AlteraVS",
+    "commands": [{
+      "id": "50b5af90-d68c-4b84-aee7-34d3e5db4a2c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "290396e3-05fd-474a-9f93-b8740cf06c82",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0527fbf-b072-4dfb-af0e-68de4668765d",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50289a61-5413-49f0-9d5a-41efff0970cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3065f84b-7dad-4786-9206-709f541f1dc5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fac6433a-5d3d-4604-bbd4-b4bfd1404db0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=P01USJT",
+      "targets": [
+        ["linkText=P01USJT", "linkText"],
+        ["css=tr:nth-child(1) > td:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'P01USJT')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_proj_edit_page.php?project_id=33')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a230234f-9bc5-4641-ab7a-68b993f12420",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center:nth-child(5) .pull-left:nth-child(1) .btn",
+      "targets": [
+        ["css=.center:nth-child(5) .pull-left:nth-child(1) .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[4]", "xpath:attributes"],
+        ["xpath=//table[@id='versions']/tbody/tr/td[5]/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//td[5]/div/div/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba213665-3979-4a48-85b0-18c6d36b853a",
+      "comment": "",
+      "command": "click",
+      "target": "id=proj-version-new-version",
+      "targets": [
+        ["id=proj-version-new-version", "id"],
+        ["name=new_version", "name"],
+        ["css=#proj-version-new-version", "css:finder"],
+        ["xpath=//input[@id='proj-version-new-version']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-version-update-form']/div/div[2]/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e737f319-d344-4996-a1e3-0efd14eeab69",
+      "comment": "",
+      "command": "type",
+      "target": "id=proj-version-new-version",
+      "targets": [
+        ["id=proj-version-new-version", "id"],
+        ["name=new_version", "name"],
+        ["css=#proj-version-new-version", "css:finder"],
+        ["xpath=//input[@id='proj-version-new-version']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-version-update-form']/div/div[2]/div/div/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "1.1.2"
+    }, {
+      "id": "66d02a48-2a8a-4777-8b61-11251b3eb087",
+      "comment": "",
+      "command": "click",
+      "target": "id=proj-version-description",
+      "targets": [
+        ["id=proj-version-description", "id"],
+        ["name=description", "name"],
+        ["css=#proj-version-description", "css:finder"],
+        ["xpath=//textarea[@id='proj-version-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-version-update-form']/div/div[2]/div/div/table/tbody/tr[3]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cecf91cc-e9ae-4c17-b28b-88b764870a53",
+      "comment": "",
+      "command": "type",
+      "target": "id=proj-version-description",
+      "targets": [
+        ["id=proj-version-description", "id"],
+        ["name=description", "name"],
+        ["css=#proj-version-description", "css:finder"],
+        ["xpath=//textarea[@id='proj-version-description']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-version-update-form']/div/div[2]/div/div/table/tbody/tr[3]/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "NovaVs2"
+    }, {
+      "id": "fa69144d-39ba-4843-a564-0ab7fbf7be89",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) .lbl",
+      "targets": [
+        ["css=tr:nth-child(5) .lbl", "css:finder"],
+        ["xpath=//form[@id='manage-proj-version-update-form']/div/div[2]/div/div/table/tbody/tr[5]/td[2]/label/span", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe586a3a-40d8-4e1e-b925-b54c9d6a2378",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white:nth-child(2)",
+      "targets": [
+        ["css=.btn-white:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Atualizar Versão']", "xpath:attributes"],
+        ["xpath=//form[@id='manage-proj-version-update-form']/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4dc43c38-3d94-4768-bf81-4a84269ddaa6",
+    "name": "DeletarVs",
+    "commands": [{
+      "id": "c3479082-7d39-4896-963d-e7deb4d07a03",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d3b2a2f-ccd6-48e1-80ee-5c0deb726801",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f87bd482-f966-423e-8b39-a8afd212c041",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "463bf180-2ec3-47e4-97ac-f3a51fecb923",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .menu-text",
+      "targets": [
+        ["css=li:nth-child(7) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gerenciar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13d9341b-e4d6-480e-bf3e-9549b5e088a9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Projetos",
+      "targets": [
+        ["linkText=Gerenciar Projetos", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Projetos')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/manage_proj_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Projetos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "662429f1-4448-4173-a039-e646fb6ef96d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=P01USJT",
+      "targets": [
+        ["linkText=P01USJT", "linkText"],
+        ["css=tr:nth-child(1) > td:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'P01USJT')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage_proj_edit_page.php?project_id=33')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be4d3343-f7fd-4072-8ee5-f514c600e104",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center:nth-child(5) .pull-left:nth-child(2) .btn",
+      "targets": [
+        ["css=.center:nth-child(5) .pull-left:nth-child(2) .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[5]", "xpath:attributes"],
+        ["xpath=//table[@id='versions']/tbody/tr/td[5]/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//td[5]/div/div[2]/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72f675a1-8978-4064-9a96-e4fba47c8e9a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Apagar Versão']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "25e91e49-1d83-46b6-9d50-ab8c87606a65",
+    "name": "ImprimirTarefas",
+    "commands": [{
+      "id": "cfd10ffb-c24d-4383-b848-fb3eebc5a7f2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49b9d119-77de-49d2-a67c-94558a25b803",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e005f23f-1ca3-423a-8356-5a0eed5da706",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0430b3a-8ed3-4972-85db-c52813276006",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ver Tarefas",
+      "targets": [
+        ["linkText=Ver Tarefas", "linkText"],
+        ["css=.nav-list > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mantis/view_all_bug_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a7f7368-e3b5-49b5-9b53-c60d421a6518",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Imprimir Tarefas",
+      "targets": [
+        ["linkText=Imprimir Tarefas", "linkText"],
+        ["css=.btn-toolbar > .btn-group > .btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Imprimir Tarefas')]", "xpath:link"],
+        ["xpath=//form[@id='bug_action']/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'print_all_bug_page.php')]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Imprimir Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "040fe438-f063-4341-aa66-477afa61db2f",
+    "name": "ExportarExel",
+    "commands": [{
+      "id": "a5072ade-7a92-401e-a045-fae9232d0e53",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/mantis/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5befcc38-be28-40d6-839f-772ce978ec95",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee906eae-ae31-4975-9117-b1539105a8e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0820b16b-85d2-4bcb-acf8-8530aefd7307",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .menu-text",
+      "targets": [
+        ["css=li:nth-child(2) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78059c3a-beae-4214-a888-aa37018d95d2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Exportação para Excel",
+      "targets": [
+        ["linkText=Exportação para Excel", "linkText"],
+        ["css=.btn-group > .btn:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Exportação para Excel')]", "xpath:link"],
+        ["xpath=//form[@id='bug_action']/div/div[2]/div/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'excel_xml_export.php')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Exportação para Excel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8c87d845-0878-49f5-9926-f9a388437852",
+    "name": "MantisBTProjetosBase2",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8b5e9061-d5c9-4f92-999d-82f4886321a8", "de72d446-cd35-4413-90f3-2f7ec3e55940", "ebdcc67c-797b-4653-9e68-a3b9b7074585", "a02b3668-dd6e-4d7e-aaac-adde53fba597", "f7b09d9d-262d-4ce5-be72-633df1b0bda5", "b86b5bda-b4d9-4d1c-b4a9-e1f748ecf229", "dc7fb8a8-ddb6-4501-a2ff-8bbc43f58002", "b6b1af1b-10b8-44ad-aa4e-388d779fa95d", "67c74eca-1d17-43c5-9b0d-65bcdab5f15d", "a9926f74-0362-47c5-bba7-7025508fc9d5", "5c44b660-ac62-4ff0-849d-858e10afd0e4", "26ca3248-4da7-4320-b6fa-f3ce589348fa", "1d055763-b0b6-460e-aa82-44474ba31d93", "3c779d3b-4ef0-4214-b6c9-f45fa3a92a87", "230bc3e2-8780-4f2e-9082-2e5e0fe5696a", "fef9db49-38d4-45d4-9611-70b0c94a0370", "35284a09-d618-48c7-9f87-6287e1983ef5", "ffceaaa6-89ee-4df8-b250-b72ff981ea1f", "09d5cc6d-261b-4e71-a4b1-fbf87bc356fd", "5a46b097-1e9c-4a0c-b743-4706ee00c805", "25e91e49-1d83-46b6-9d50-ab8c87606a65", "040fe438-f063-4341-aa66-477afa61db2f", "a355969d-b109-4afd-84ab-cc98a766e685"]
+  }, {
+    "id": "6782882c-a7c3-41cf-bfd6-77076f971009",
+    "name": "MantisBTProjetosBase2DeletAll",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8b5e9061-d5c9-4f92-999d-82f4886321a8", "22ee0d3e-dbd2-46fa-92c8-7bacb3b5e0af", "913707b1-9bcd-4022-8ae7-f341963ba29a", "095992ce-74cc-4576-900f-5690e1a75336", "4dc43c38-3d94-4768-bf81-4a84269ddaa6", "a40a6c45-5de4-4f01-9973-06f62af33344", "c6e6933d-115d-4289-82e1-b594ae9cad75", "b43d2d71-3cc7-41c4-a02d-5301a9446d4f", "a68e8a9b-afee-466c-9ccd-0967100ce4cf", "a355969d-b109-4afd-84ab-cc98a766e685"]
+  }],
+  "urls": ["http://127.0.0.1/mantis/manage_proj_create_page.php", "http://localhost/mantis/my_view_page.php"],
+  "plugins": []
+}
